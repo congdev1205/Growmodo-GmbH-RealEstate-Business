@@ -1,0 +1,72 @@
+/* ==========================================================================
+   ESTATEIN DESIGN TOKENS
+   Single source of truth — every value below was extracted directly from
+   the Figma file via the REST API (not estimated from screenshots).
+   Every other CSS file should reference these variables, never hardcode
+   a color/size/spacing value directly.
+   ========================================================================== */
+
+:root {
+
+  /* ---- Surface colors (3-tier dark system) ---- */
+  --color-bg: #141414;         /* page background */
+  --color-surface: #1a1a1a;    /* cards, buttons, inputs — sits "above" bg */
+  --color-border: #262626;     /* all hairline borders */
+
+  /* ---- Text colors ---- */
+  --color-white: #ffffff;
+  --color-muted: #999999;
+  --color-grey-mid: #808080;
+
+  /* ---- Brand ---- */
+  --color-primary: #703bf7;
+  --color-star: #ffe500;
+
+  /* ---- Typography ---- */
+  --font-base: 'Urbanist', sans-serif;
+
+  --fs-h1: 60px;
+  --fs-h2: 48px;
+  --fs-h3: 24px;
+  --fs-stat: 40px;
+  --fs-body: 18px;
+  --fs-name: 20px;
+  --fs-small: 20px;
+
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+
+  /* ---- Radius ---- */
+  --radius-btn: 10px;
+  --radius-card: 12px;
+  --radius-pill: 28px;
+  --radius-circle: 50%;
+
+  /* ---- Spacing ---- */
+  --space-card-pad: 40px;
+  --space-card-pad-lg: 50px;
+  --space-btn-pad-y: 18px;
+  --space-btn-pad-x: 24px;
+  --space-section-gap: 80px;
+
+  /* ---- Layout ---- */
+  --container-max: 1596px;
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --fs-h2: 38px;
+    --fs-h3: 20px;
+    --fs-body: 16px;
+    --fs-small: 16px;
+    --radius-btn: 8px;
+    --space-btn-pad-y: 14px;
+    --space-btn-pad-x: 20px;
+    --space-card-pad: 30px;
+    --space-card-pad-lg: 40px;
+  }
+}
